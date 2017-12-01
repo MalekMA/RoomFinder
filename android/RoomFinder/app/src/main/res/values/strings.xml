@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RoomFinder</string>
+    <string name="quick_search">Quick Search</string>
+    <string name="advanced_search">Advanced Search</string>
+</resources>

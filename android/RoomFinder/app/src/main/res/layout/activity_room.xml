@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="678dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/rroomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Text View"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/overallRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rroomName"
+            android:textSize="15sp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_toEndOf="@+id/rroomName"
+            android:layout_toRightOf="@+id/rroomName"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/distanceAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rroomName"
+            android:textSize="15sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/overallRating"
+            android:layout_toRightOf="@+id/overallRating"
+            android:text="TextView" />
+
+
+        <Button
+            android:id="@+id/submitReviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/inReview"
+            android:layout_marginTop="16dp"
+            android:text="Submit Review"
+            android:onClick="submit"/>
+
+        <TextView
+            android:id="@+id/nextClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rroomName"
+            android:layout_marginTop="12dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/wifiRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nextClass"
+            android:layout_marginTop="27dp"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/inWifiRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/wifiRating"
+            android:layout_alignStart="@+id/wifiRating"
+            android:layout_below="@+id/wifiRating"
+            android:layout_marginTop="20dp"
+            android:ems="3"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/soundRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/wifiRating"
+            android:layout_toEndOf="@+id/wifiRating"
+            android:layout_toRightOf="@+id/wifiRating"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/inSoundRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/inWifiRating"
+            android:layout_alignBottom="@+id/inWifiRating"
+            android:layout_alignLeft="@+id/soundRating"
+            android:layout_alignStart="@+id/soundRating"
+            android:ems="3"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/seatRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/soundRating"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_toEndOf="@+id/inSoundRating"
+            android:layout_toRightOf="@+id/inSoundRating"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/inSeatRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seatRating"
+            android:layout_alignStart="@+id/seatRating"
+            android:layout_alignTop="@+id/inSoundRating"
+            android:ems="3"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/inWifiRating"
+            android:layout_marginTop="23dp"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/inReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/reviews"
+            android:layout_marginTop="16dp"
+            android:ems="18"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/homeButton"
+            android:onClick="home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/submitReviewButton"
+            android:layout_marginTop="7dp"
+            android:text="Home" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
