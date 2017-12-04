@@ -39,6 +39,6 @@ Used to udate the ratings for a room after the user has rated it.
 
 - [Key] = dsproj
 - [Day] = Monday, Tuesday,..., Friday
-- [Time] = 24 hr time where the colon is replaced with a colon. Example: 2:10 PM would be entered as 14.10
+- [Time] = 24 hr time where the colon is replaced with a period. Example: 2:10 PM would be entered as 14.10
 - [Room] = Room name at UOIT north campus. Example: UA1220 
 - [Rating] = Value between 1-5.
