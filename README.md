@@ -16,25 +16,25 @@ In addition the app, our API could be used to find empty rooms, although the dat
 Our API supports 6 different requests which offer different results:
 
 Firstly, the URL of the API is the following:
-http://roomfinder-187219.appspot.com/ <br>
+<b> http://roomfinder-187219.appspot.com/</b> <br>
 This URL does not redirect anywhere. The following paths must be enter after it to receive results:
 
-/quick?key=[key]&day=[day]&time=[time] \n
+<b>/quick?key=[key]&day=[day]&time=[time]</b><br>
 Will return a list of all available rooms for the specified day and time along with the ratings associated with that room.
 
-/schedule?key=[key]&room=[room]&day=[day] \n
+<b>/schedule?key=[key]&room=[room]&day=[day] </b><br>
 Will return the schedule for specified room on a specific day.
 
-/byname?key=[key]&day=[day]&time=[time]&room=[room] \n
+<b>/byname?key=[key]&day=[day]&time=[time]&room=[room] </b><br>
 Will return the remaining classes for a room after the time specified on that day.
 
-/enterreview?key=[key]&room=[room]&review=[review] \n
+<b>/enterreview?key=[key]&room=[room]&review=[review]</b><br>
 Used for entering a review for a room.
 
-/getreview?key=[key]&room=[room] \n
+<b>/getreview?key=[key]&room=[room] </b><br>
 Gets the reviews for a specified room.
 
-/updateratings?key=[key]&room=[room]&wifi=[rating]&quiet=[rating]&seat=[rating]&overall=[rating]&total=[rating] \n
+<b>/updateratings?key=[key]&room=[room]&wifi=[rating]&quiet=[rating]&seat=[rating]&overall=[rating]&total=[rating] </b><br>
 Used to udate the ratings for a room after the user has rated it.
 
 - [Key] = dsproj
