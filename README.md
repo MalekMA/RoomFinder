@@ -16,7 +16,7 @@ In addition the app, our API could be used to find empty rooms, although the dat
 Our API supports 6 different requests which offer different results:
 
 Firstly, the URL of the API is the following:
-http://roomfinder-187219.appspot.com/ \n
+http://roomfinder-187219.appspot.com/ <br>
 This URL does not redirect anywhere. The following paths must be enter after it to receive results:
 
 /quick?key=[key]&day=[day]&time=[time] \n
